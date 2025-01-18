@@ -99,9 +99,10 @@ cc_binary {
     },
 }
 
-cc_binary_host {
+cc_binary {
     name: "lpmake",
     defaults: ["lp_defaults"],
+    host_supported: true,
     shared_libs: [
         "libbase",
         "liblog",
